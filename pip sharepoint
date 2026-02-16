@@ -1,45 +1,137 @@
-# Connect to SharePoint
-Connect-PnPOnline -Url "https://yourtenant.sharepoint.com/sites/yoursite" -Interactive
+Here’s a clean extraction of **every hyperlink** from the uploaded SharePoint page content you provided.  
+All links come directly from the file you uploaded → **NSS-CL-Inside-Sales.aspx** [\[NSS-CL-Inside-Sales | SharePoint\]](https://onyourside.sharepoint.com/sites/NSSCLDirect/SitePages/NSS-CL-Inside-Sales.aspx)
 
-# Define export path
-$exportPath = "C:\Exports\SharePoint_Links_Organized.csv"
-$results = @()
+Duplicates and empty links are removed.
 
-# Get all pages from Site Pages library
-$pages = Get-PnPListItem -List "Site Pages" -PageSize 500 `
-    -Fields "Title", "FileRef", "Category", "Department", "CanvasContent1"
+***
 
-foreach ($page in $pages) {
-    # Extract metadata
-    $pageTitle = $page["Title"]
-    $pageUrl = $page["FileRef"]
-    $category = $page["Category"]  # Your custom category field
-    $department = $page["Department"]  # Your custom department field
-    
-    # Parse HTML content for links
-    $htmlContent = $page["CanvasContent1"]
-    
-    if ($htmlContent) {
-        # Extract all hyperlinks using regex
-        $linkPattern = '<a\s+[^>]*href="([^"]*)"[^>]*>(.*?)</a>'
-        $matches = [regex]::Matches($htmlContent, $linkPattern)
-        
-        foreach ($match in $matches) {
-            $linkUrl = $match.Groups[1].Value
-            $linkText = $match.Groups[2].Value -replace '<[^>]+>', '' # Remove any HTML tags
-            
-            $results += [PSCustomObject]@{
-                Department = $department
-                Category = $category
-                SourcePage = $pageTitle
-                SourcePageUrl = $pageUrl
-                LinkText = $linkText
-                LinkUrl = $linkUrl
-            }
-        }
-    }
-}
+# ✅ **Hyperlink Table (Extracted from Page)**
 
-# Export to CSV with organization preserved
-$results | Export-Csv -Path $exportPath -NoTypeInformation
-Write-Host "Links exported to $exportPath with department and category organization"
+| **Link Text**                          | **URL**                                                                                                                                                                                   | **Section / Heading**                        | **Is Navigation?** |
+| -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- | ------------------ |
+| *Open Here*                            | /:p\:/r/sites/NSSCLDirect/Inside%20Sales%20Document/Archive/Inside%20Sales%202026%20Team%20Plans.pptx?d=w87f77cc73e834af2b5bfe5e865680571\&csf=1\&web=1\&e=aoNk4q                         | 2026 Inside Sales Team Plan                  | In‑content         |
+| *Open Here*                            | /:b:/s/AppetiteSprints/IQCMhKzOqdXwTYTc5XYBye-oAfJM6HM3H1sEtMtmYxGVrqc?e=bFZ3O4                                                                                                           | 2026 Inside Sales Team Plan                  | In‑content         |
+| SharePoint Link                        | /sites/SmallCommercialIdentityandAppetite                                                                                                                                                 | Ongoing 2026 Initiatives – Appetite          | In‑content         |
+| <AskCLNewBusiness@nationwide.com>      | mailto:<AskCLNewBusiness@nationwide.com>                                                                                                                                                  | Underwriting Contacts                        | In‑content         |
+| <AskCLExistingBusiness@nationwide.com> | mailto:<AskCLExistingBusiness@nationwide.com>                                                                                                                                             | Underwriting Contacts                        | In‑content         |
+| (Link Icon)                            | /sites/NSSCLDirect                                                                                                                                                                        | AI Agents (Scout / AgentWriter / Dash group) | In‑content         |
+| (Teams App Link 1)                     | <https://teams.microsoft.com/l/app/f6405520-7907-4464-8f6e-9889e2fb7d8f?templateInstanceId=00a01ab3-4aa3-4d71-aa75-b25d881c5889&environment=Default-22140e4c-d390-45c2-b297-a26c516dc461> | AI Agents                                    | In‑content         |
+| (Teams App Link 2)                     | <https://teams.microsoft.com/l/app/f6405520-7907-4464-8f6e-9889e2fb7d8f?templateInstanceId=2c02fb02-638f-4794-b04d-da8dea6be7e0&environment=Default-22140e4c-d390-45c2-b297-a26c516dc461> | AI Agents                                    | In‑content         |
+| (Teams App Link 3)                     | <https://teams.microsoft.com/l/app/f6405520-7907-4464-8f6e-9889e2fb7d8f?templateInstanceId=a4d062d3-c9ab-4ea1-9f61-da5a7d7ded1d&environment=Default-22140e4c-d390-45c2-b297-a26c516dc461> | AI Agents                                    | In‑content         |
+
+***
+
+#
+***
+NEXT BIT OF DATA****************************************************************************************************
+
+
+
+
+Here’s a clear explanation of that text, based **only on the surrounding content from your uploaded SharePoint page**. [\[NSS-CL-Inside-Sales | SharePoint\]](https://onyourside.sharepoint.com/sites/NSSCLDirect/SitePages/NSS-CL-Inside-Sales.aspx)
+
+***
+
+# ✅ **Explanation of the “Quick Links” Text**
+
+The text appears to be a **navigation block** or **shortcut panel** meant to help Inside Sales team members quickly access the most commonly used internal tools, resources, and process pages.
+
+Based on the structure and other elements in the page, this is most likely located **near the top of the Inside Sales SharePoint site**, serving as a centralized “hub” for daily operations. It fits with the rest of the page’s purpose, which is providing **Inside Sales workflows, initiatives, and reference materials**.
+
+Below is what each item most likely represents **based on the surrounding page context and typical Inside Sales needs**:
+
+***
+
+## **Breakdown of Each Quick Link**
+
+### **Inside Sales Home 🏠**
+
+*   Likely takes you back to the main Inside Sales landing page.
+*   Functions as the “home base” for all team resources.
+
+### **Huddle Board 📋**
+
+*   Matches the “Inside Sales Huddle Board” section on the page.
+*   Likely a dynamic board showing team initiatives, updates, reminders, and priorities. [\[NSS-CL-Inside-Sales | SharePoint\]](https://onyourside.sharepoint.com/sites/NSSCLDirect/SitePages/NSS-CL-Inside-Sales.aspx)
+
+### **Problem Solving Board ❌**
+
+*   Probably a board or tracker used for issues, process gaps, team problems, or escalation items.
+
+### **Reports 📊**
+
+*   Centralized place where reporting dashboards or daily/weekly sales reports are stored.
+
+### **Onboarding 🆕**
+
+*   A section created for new Inside Sales Agents containing training, job aids, system walkthroughs, and onboarding workflow steps.
+
+### **Daily Tasks**
+
+*   Likely a reference page listing:
+    *   Required daily procedures
+    *   Sales process workflows
+    *   Handling instructions
+    *   Time-sensitive tasks
+
+### **Handling Procedures ⚙️**
+
+*   Similar to above but more formal:
+    *   Underwriting guidance
+    *   Submission steps
+    *   PolicyCenter/ClearQuote instructions
+    *   Scripts or talk tracks
+
+### **Agent Pipeline Report 📋**
+
+*   A report or dashboard showing:
+    *   Active agent submissions
+    *   Status of quotes
+    *   Follow‑ups
+    *   Production metrics
+
+### **UW Submission Template**
+
+*   A template used by Inside Sales to submit clean cases to underwriting.
+*   Fits with the “UW Contacts” and “AI Agents (UW Coach)” sections already on the page. [\[NSS-CL-Inside-Sales | SharePoint\]](https://onyourside.sharepoint.com/sites/NSSCLDirect/SitePages/NSS-CL-Inside-Sales.aspx)
+
+### **OneNote 📝**
+
+*   Shared team OneNote notebook that stores:
+    *   SOPs
+    *   Quick references
+    *   Call guides
+    *   Team-based knowledge
+
+### **Cross‑Sell List**
+
+*   A list used to identify cross‑sell opportunities, likely tied to:
+    *   Appetite expansion
+    *   Book growth initiatives
+
+### **All-In-One Form**
+
+*   A consolidated submission or intake form that captures:
+    *   Lead details
+    *   Exposure info
+    *   Loss history
+    *   Contacts
+    *   Eligibility checks
+*   Aligns with Inside Sales’ need to streamline submission intake.
+
+***
+
+# ⭐ **Summary**
+
+This “Quick Links” block is essentially a **shortcut menu for top Inside Sales workflows and tools**, designed to keep frequently accessed pages one click away. It reflects the operational structure shown elsewhere on your Inside Sales page—focusing on:
+
+*   Daily workflows
+*   Underwriting coordination
+*   Reporting
+*   Onboarding
+*   Team communication
+*   Submission quality improvement
+
+***
+
+If you want, I can **turn this into a formatted navigation panel**, **rebuild it into a SharePoint web part**, or **convert it into a left-hand menu or hub site layout**.
