@@ -1,0 +1,104 @@
+<section>
+  <h1>Inside Sales – AI Landing Page</h1>
+
+  <h2>1) Copilot Personalization (copy into Custom instructions)</h2>
+  <ul>
+    <li><strong>Role & Tools:</strong> Inside Sales Agent – Commercial Lines; Salesforce (CLNSS), ClearQuote, PolicyCenter (Commercial Lines), Agent Center, SharePoint, nwpcknowledge.nationwide.com.</li>
+    <li><strong>Quality & Process:</strong> Accuracy, current system status, Nationwide-approved processes.</li>
+    <li><strong>When answering sales/quoting/UW/policy questions:</strong> State the system used; if info isn’t accessible, say so and give next steps; keep concise and call-ready; prefer step-by-step, checklists, talk tracks, or email templates.</li>
+    <li><strong>When creating forms/templates/workflows:</strong> Use bullet/checklist style; clear, step-by-step; prioritize readability/actionability.</li>
+    <li><strong>Formatting:</strong> Copy-paste-ready; structured; field labels first. Tone: professional, friendly, audience-appropriate.</li>
+    <li><strong>Always add:</strong> “Return the result as a short checklist or bullet list, copy-paste ready for email or Salesforce notes, with clear field labels first.”</li>
+  </ul>
+
+  <h2>2) Quick Launch</h2>
+  <ul>
+    <li><strong>Inside Sales Site Home (NSSCLDirect)</strong> – SharePoint site root for Inside Sales.</li>
+    <li><strong>Huddle Board</strong> – team plan & initiatives; includes Appetite Updates 3/2026 with “Inside Sales 2026 Team Plans” deck (Open Here).</li>
+    <li><strong>Small Commercial Identity (Appetite) – SharePoint Link</strong> – ongoing appetite updates.</li>
+    <li><strong>AI Agents (Teams):</strong> Scout – UW Coach; AgentWriter – Draft Email Help; Dash – CL Sidekick V3.0.</li>
+  </ul>
+
+  <h2>3) High-Impact Prompts</h2>
+  <h3>A) Lead Intake & Qualification</h3>
+  <ul>
+    <li>Create a lead intake checklist for a new commercial quote [...]</li>
+    <li>Draft a call script to qualify a BOP prospect in [State] [...]</li>
+    <li>Turn these notes into a Salesforce (CLNSS) update [...]</li>
+  </ul>
+
+  <h3>B) Appetite, Eligibility & Class Codes</h3>
+  <ul>
+    <li>From this ops description, recommend likely class/NAICS and flag appetite/eligibility for BOP/GL/WC/BA [...]</li>
+    <li>Is Nationwide in appetite for [business type] office-only in [State]? [...]</li>
+    <li>Create a classification Q&A for [class] to confirm with UW.</li>
+  </ul>
+
+  <h3>C) ClearQuote – Quote Setup</h3>
+  <ul>
+    <li>Turn this submission into a ClearQuote setup checklist [...]</li>
+    <li>Suggest rating assumptions for a competitive first pass [...]</li>
+  </ul>
+
+  <h3>D) PolicyCenter – Lifecycle Steps</h3>
+  <ul>
+    <li>Binding instructions for BA [...]</li>
+    <li>Midterm endorsement checklist [...]</li>
+  </ul>
+
+  <h3>E) Competitive Comparison & Client-Safe Explanation</h3>
+  <ul>
+    <li>Side-by-side comparison: Nationwide vs [Carrier 2] vs [Carrier 3] [...]</li>
+    <li>Explain BI ALS vs 12-month stated in ≤120 words.</li>
+  </ul>
+
+  <h3>F) Document Extraction → Clean Data</h3>
+  <ul>
+    <li>Extract insured details from [attach ACORD/PDF] [...]</li>
+    <li>Extract drivers [...]</li>
+    <li>Extract vehicles → Excel (two sheets: Drivers/Vehicles).</li>
+  </ul>
+
+  <h3>G) Underwriting Submission Quality</h3>
+  <ul>
+    <li>Create a UW narrative from these notes [...]</li>
+    <li>Top 10 UW questions for [class] + client-friendly asks.</li>
+  </ul>
+
+  <h3>H) Client & Agent Communications</h3>
+  <ul>
+    <li>Quote delivery email for [Named Insured] [...]</li>
+    <li>Missing info request email [...]</li>
+    <li>Declination email template [...]</li>
+  </ul>
+
+  <h2>4) Reusable Templates</h2>
+  <pre><code>Task: Extract drivers and vehicles from the attached file(s).
+Inputs: [Attach ACORD/PDF]
+Output:
+- Excel with two sheets: Drivers, Vehicles.
+- Drivers columns: First, Middle, Last, Suffix, License State, License #, DOB (MM/DD/YYYY), Gender, Year Licensed, Status.
+- Vehicles columns: Year, Make, Model, VIN, Primary Class, Secondary Class, Size Class, Radius, Business Use, Fleet (Y/N), Hazard Grade, GVWR band.
+Constraints: Keep values as plain text; do not reformat DOB; no empty rows; header row bold.
+  </code></pre>
+
+  <pre><code>Task: Side-by-side policy comparison.
+Inputs: [Paste or attach 2-3 quotes]
+Output: Table with rows = Coverage/Form; columns = Carrier, Limit, Deductible, Key Endorsements/Exclusions, Notes.
+Also include: 5-bullet client-friendly summary + 1-paragraph recommendation.
+Constraints: Highlight material differences in bold; avoid jargon; mark “Not shown” if a form is unclear.
+  </code></pre>
+
+  <pre><code>Task: Build an underwriting narrative.
+Inputs: [Ops description], [Years in biz], [Payroll/Receipts by class], [Subcontracting %], [Contracts/Hold Harmless], [Loss history], [Controls: alarms, sprinklers, driver MVR checks, telematics].
+Output: 6-8 sentences covering operations, experience, controls, contracts, and why this is a good risk.
+Constraints: Neutral tone; no guarantees; no subjective adjectives.
+  </code></pre>
+
+  <pre><code>Task: Client-facing quote delivery email.
+Inputs: [Named Insured], [Lines quoted], [Top 3 highlights], [Binding requirements], [Expiration date], [Your contact]
+Output: Subject + email body (greeting, highlights in bullets, next steps, binding checklist, sign-off).
+Tone: Warm, professional, concise.
+Constraints: ~150-180 words; client-safe; no sensitive info.
+  </code></pre>
+</section>
