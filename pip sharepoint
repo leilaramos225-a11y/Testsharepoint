@@ -1,0 +1,45 @@
+# Connect to SharePoint
+Connect-PnPOnline -Url "https://yourtenant.sharepoint.com/sites/yoursite" -Interactive
+
+# Define export path
+$exportPath = "C:\Exports\SharePoint_Links_Organized.csv"
+$results = @()
+
+# Get all pages from Site Pages library
+$pages = Get-PnPListItem -List "Site Pages" -PageSize 500 `
+    -Fields "Title", "FileRef", "Category", "Department", "CanvasContent1"
+
+foreach ($page in $pages) {
+    # Extract metadata
+    $pageTitle = $page["Title"]
+    $pageUrl = $page["FileRef"]
+    $category = $page["Category"]  # Your custom category field
+    $department = $page["Department"]  # Your custom department field
+    
+    # Parse HTML content for links
+    $htmlContent = $page["CanvasContent1"]
+    
+    if ($htmlContent) {
+        # Extract all hyperlinks using regex
+        $linkPattern = '<a\s+[^>]*href="([^"]*)"[^>]*>(.*?)</a>'
+        $matches = [regex]::Matches($htmlContent, $linkPattern)
+        
+        foreach ($match in $matches) {
+            $linkUrl = $match.Groups[1].Value
+            $linkText = $match.Groups[2].Value -replace '<[^>]+>', '' # Remove any HTML tags
+            
+            $results += [PSCustomObject]@{
+                Department = $department
+                Category = $category
+                SourcePage = $pageTitle
+                SourcePageUrl = $pageUrl
+                LinkText = $linkText
+                LinkUrl = $linkUrl
+            }
+        }
+    }
+}
+
+# Export to CSV with organization preserved
+$results | Export-Csv -Path $exportPath -NoTypeInformation
+Write-Host "Links exported to $exportPath with department and category organization"
