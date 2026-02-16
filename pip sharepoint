@@ -21,117 +21,275 @@ Duplicates and empty links are removed.
 
 ***
 
-#
-***
-NEXT BIT OF DATA****************************************************************************************************
 
-
-
-
-Here’s a clear explanation of that text, based **only on the surrounding content from your uploaded SharePoint page**. [\[NSS-CL-Inside-Sales | SharePoint\]](https://onyourside.sharepoint.com/sites/NSSCLDirect/SitePages/NSS-CL-Inside-Sales.aspx)
+All set—here’s the **fresh extraction + normalization** from your uploaded page.  
+**Source:** `NSS-CL-Inside-Sales.aspx` (exact content you shared). [\[NSS-CL-Inside-Sales | SharePoint\]](https://onyourside.sharepoint.com/sites/NSSCLDirect/SitePages/NSS-CL-Inside-Sales.aspx)
 
 ***
 
-# ✅ **Explanation of the “Quick Links” Text**
+## ✅ Deduped Hyperlinks (Normalized to Absolute URLs)
 
-The text appears to be a **navigation block** or **shortcut panel** meant to help Inside Sales team members quickly access the most commonly used internal tools, resources, and process pages.
+> *Empty‑text anchors were excluded; all remaining links are in‑content.* [\[NSS-CL-Inside-Sales | SharePoint\]](https://onyourside.sharepoint.com/sites/NSSCLDirect/SitePages/NSS-CL-Inside-Sales.aspx)
 
-Based on the structure and other elements in the page, this is most likely located **near the top of the Inside Sales SharePoint site**, serving as a centralized “hub” for daily operations. It fits with the rest of the page’s purpose, which is providing **Inside Sales workflows, initiatives, and reference materials**.
+| **Link Text**                          | **URL (Absolute)**                                                                                                                                                                               | **Section / Heading (Detected)**                                        | **Is Navigation?**                                                                                                                                |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Open Here                              | `https://onyourside.sharepoint.com/:p:/r/sites/NSSCLDirect/Inside%20Sales%20Document/Archive/Inside%20Sales%202026%20Team%20Plans.pptx?d=w87f77cc73e834af2b5bfe5e865680571&csf=1&web=1&e=aoNk4q` | 2026 Inside Sales Team Plan / Appetite Updates 3/2026                   | In‑content [\[NSS-CL-Inside-Sales | SharePoint\]](https://onyourside.sharepoint.com/sites/NSSCLDirect/SitePages/NSS-CL-Inside-Sales.aspx) |
+| Open Here                              | `https://onyourside.sharepoint.com/:b:/s/AppetiteSprints/IQCMhKzOqdXwTYTc5XYBye-oAfJM6HM3H1sEtMtmYxGVrqc?e=bFZ3O4`                                                                               | 2026 Inside Sales Team Plan / Appetite Updates 3/2026                   | In‑content [\[NSS-CL-Inside-Sales | SharePoint\]](https://onyourside.sharepoint.com/sites/NSSCLDirect/SitePages/NSS-CL-Inside-Sales.aspx) |
+| SharePoint Link                        | `https://onyourside.sharepoint.com/sites/SmallCommercialIdentityandAppetite`                                                                                                                     | Ongoing 2026 Initiatives → Small Commercial Identity (Appetite) Updates | In‑content [\[NSS-CL-Inside-Sales | SharePoint\]](https://onyourside.sharepoint.com/sites/NSSCLDirect/SitePages/NSS-CL-Inside-Sales.aspx) |
+| <AskCLNewBusiness@nationwide.com>      | `mailto:AskCLNewBusiness@nationwide.com`                                                                                                                                                         | Notepad → Underwriting Contacts                                         | In‑content [\[NSS-CL-Inside-Sales | SharePoint\]](https://onyourside.sharepoint.com/sites/NSSCLDirect/SitePages/NSS-CL-Inside-Sales.aspx) |
+| <AskCLExistingBusiness@nationwide.com> | `mailto:AskCLExistingBusiness@nationwide.com`                                                                                                                                                    | Notepad → Underwriting Contacts                                         | In‑content [\[NSS-CL-Inside-Sales | SharePoint\]](https://onyourside.sharepoint.com/sites/NSSCLDirect/SitePages/NSS-CL-Inside-Sales.aspx) |
 
-Below is what each item most likely represents **based on the surrounding page context and typical Inside Sales needs**:
-
-***
-
-## **Breakdown of Each Quick Link**
-
-### **Inside Sales Home 🏠**
-
-*   Likely takes you back to the main Inside Sales landing page.
-*   Functions as the “home base” for all team resources.
-
-### **Huddle Board 📋**
-
-*   Matches the “Inside Sales Huddle Board” section on the page.
-*   Likely a dynamic board showing team initiatives, updates, reminders, and priorities. [\[NSS-CL-Inside-Sales | SharePoint\]](https://onyourside.sharepoint.com/sites/NSSCLDirect/SitePages/NSS-CL-Inside-Sales.aspx)
-
-### **Problem Solving Board ❌**
-
-*   Probably a board or tracker used for issues, process gaps, team problems, or escalation items.
-
-### **Reports 📊**
-
-*   Centralized place where reporting dashboards or daily/weekly sales reports are stored.
-
-### **Onboarding 🆕**
-
-*   A section created for new Inside Sales Agents containing training, job aids, system walkthroughs, and onboarding workflow steps.
-
-### **Daily Tasks**
-
-*   Likely a reference page listing:
-    *   Required daily procedures
-    *   Sales process workflows
-    *   Handling instructions
-    *   Time-sensitive tasks
-
-### **Handling Procedures ⚙️**
-
-*   Similar to above but more formal:
-    *   Underwriting guidance
-    *   Submission steps
-    *   PolicyCenter/ClearQuote instructions
-    *   Scripts or talk tracks
-
-### **Agent Pipeline Report 📋**
-
-*   A report or dashboard showing:
-    *   Active agent submissions
-    *   Status of quotes
-    *   Follow‑ups
-    *   Production metrics
-
-### **UW Submission Template**
-
-*   A template used by Inside Sales to submit clean cases to underwriting.
-*   Fits with the “UW Contacts” and “AI Agents (UW Coach)” sections already on the page. [\[NSS-CL-Inside-Sales | SharePoint\]](https://onyourside.sharepoint.com/sites/NSSCLDirect/SitePages/NSS-CL-Inside-Sales.aspx)
-
-### **OneNote 📝**
-
-*   Shared team OneNote notebook that stores:
-    *   SOPs
-    *   Quick references
-    *   Call guides
-    *   Team-based knowledge
-
-### **Cross‑Sell List**
-
-*   A list used to identify cross‑sell opportunities, likely tied to:
-    *   Appetite expansion
-    *   Book growth initiatives
-
-### **All-In-One Form**
-
-*   A consolidated submission or intake form that captures:
-    *   Lead details
-    *   Exposure info
-    *   Loss history
-    *   Contacts
-    *   Eligibility checks
-*   Aligns with Inside Sales’ need to streamline submission intake.
+> **Note:** Icon‑only/empty‑text anchors were present for `/sites/NSSCLDirect` and three Teams app URLs; per your rule, they are **excluded** here. [\[NSS-CL-Inside-Sales | SharePoint\]](https://onyourside.sharepoint.com/sites/NSSCLDirect/SitePages/NSS-CL-Inside-Sales.aspx)
 
 ***
 
-# ⭐ **Summary**
+## 📥 Copy‑Ready CSV (Absolute URLs)
 
-This “Quick Links” block is essentially a **shortcut menu for top Inside Sales workflows and tools**, designed to keep frequently accessed pages one click away. It reflects the operational structure shown elsewhere on your Inside Sales page—focusing on:
+You can paste this straight into Excel or import into a SharePoint list.
 
-*   Daily workflows
-*   Underwriting coordination
-*   Reporting
-*   Onboarding
-*   Team communication
-*   Submission quality improvement
+```csv
+Link Text,URL,Section/Heading,Is Navigation
+"Open Here","https://onyourside.sharepoint.com/:p:/r/sites/NSSCLDirect/Inside%20Sales%20Document/Archive/Inside%20Sales%202026%20Team%20Plans.pptx?d=w87f77cc73e834af2b5bfe5e865680571&csf=1&web=1&e=aoNk4q","2026 Inside Sales Team Plan / Appetite Updates 3/2026","In-content"
+"Open Here","https://onyourside.sharepoint.com/:b:/s/AppetiteSprints/IQCMhKzOqdXwTYTc5XYBye-oAfJM6HM3H1sEtMtmYxGVrqc?e=bFZ3O4","2026 Inside Sales Team Plan / Appetite Updates 3/2026","In-content"
+"SharePoint Link","https://onyourside.sharepoint.com/sites/SmallCommercialIdentityandAppetite","Ongoing 2026 Initiatives → Small Commercial Identity (Appetite) Updates","In-content"
+"AskCLNewBusiness@nationwide.com","mailto:AskCLNewBusiness@nationwide.com","Notepad → Underwriting Contacts","In-content"
+"AskCLExistingBusiness@nationwide.com","mailto:AskCLExistingBusiness@nationwide.com","Notepad → Underwriting Contacts","In-content"
+```
 
 ***
 
-If you want, I can **turn this into a formatted navigation panel**, **rebuild it into a SharePoint web part**, or **convert it into a left-hand menu or hub site layout**.
+Here are the same **deduped, normalized hyperlinks** with a new **Description** column, based on the surrounding text in your uploaded page (**NSS-CL-Inside-Sales.aspx**). [\[NSS-CL-Inside-Sales | SharePoint\]](https://onyourside.sharepoint.com/sites/NSSCLDirect/SitePages/NSS-CL-Inside-Sales.aspx)
+
+***
+
+## ✅ Hyperlink Table with Descriptions
+
+| **Link Text**                          | **URL (Absolute)**                                                                                                                                                                               | **Section / Heading (Detected)**                                        | **Is Navigation?** | **Description**                                                                                                                                                                                                                                                             |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------- | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Open Here                              | `https://onyourside.sharepoint.com/:p:/r/sites/NSSCLDirect/Inside%20Sales%20Document/Archive/Inside%20Sales%202026%20Team%20Plans.pptx?d=w87f77cc73e834af2b5bfe5e865680571&csf=1&web=1&e=aoNk4q` | 2026 Inside Sales Team Plan / Appetite Updates 3/2026                   | In‑content         | PowerPoint deck: **Inside Sales 2026 Team Plans** referenced under “Appetite Updates 3/2026.” [\[NSS-CL-Inside-Sales | SharePoint\]](https://onyourside.sharepoint.com/sites/NSSCLDirect/SitePages/NSS-CL-Inside-Sales.aspx)                                        |
+| Open Here                              | `https://onyourside.sharepoint.com/:b:/s/AppetiteSprints/IQCMhKzOqdXwTYTc5XYBye-oAfJM6HM3H1sEtMtmYxGVrqc?e=bFZ3O4`                                                                               | 2026 Inside Sales Team Plan / Appetite Updates 3/2026                   | In‑content         | File in **AppetiteSprints** library tied to the “Appetite Updates 3/2026” call‑out (likely the sprint/update artifact). [\[NSS-CL-Inside-Sales | SharePoint\]](https://onyourside.sharepoint.com/sites/NSSCLDirect/SitePages/NSS-CL-Inside-Sales.aspx)              |
+| SharePoint Link                        | `https://onyourside.sharepoint.com/sites/SmallCommercialIdentityandAppetite`                                                                                                                     | Ongoing 2026 Initiatives → Small Commercial Identity (Appetite) Updates | In‑content         | SharePoint site used to **monitor appetite changes/expansions** and share updates with agents; called out as an ongoing review item. [\[NSS-CL-Inside-Sales | SharePoint\]](https://onyourside.sharepoint.com/sites/NSSCLDirect/SitePages/NSS-CL-Inside-Sales.aspx) |
+| <AskCLNewBusiness@nationwide.com>      | `mailto:AskCLNewBusiness@nationwide.com`                                                                                                                                                         | Notepad → Underwriting Contacts                                         | In‑content         | **Small Market Underwriting – New Business** mailbox; listed alongside hours (8am–8pm ET) and phone contact. [\[NSS-CL-Inside-Sales | SharePoint\]](https://onyourside.sharepoint.com/sites/NSSCLDirect/SitePages/NSS-CL-Inside-Sales.aspx)                         |
+| <AskCLExistingBusiness@nationwide.com> | `mailto:AskCLExistingBusiness@nationwide.com`                                                                                                                                                    | Notepad → Underwriting Contacts                                         | In‑content         | **Small Market Underwriting – Existing Business** mailbox; companion to the New Business contact. [\[NSS-CL-Inside-Sales | SharePoint\]](https://onyourside.sharepoint.com/sites/NSSCLDirect/SitePages/NSS-CL-Inside-Sales.aspx)                                    |
+
+> **Note:** Icon‑only/empty‑text anchors (site root and three Teams “Add to Teams” links) were intentionally excluded per your rule. If you want them included with practical labels (e.g., **Scout**, **AgentWriter**, **Dash**, **NSSCLDirect Home**), say **“include icon links”** and I’ll append them with descriptions. [\[NSS-CL-Inside-Sales | SharePoint\]](https://onyourside.sharepoint.com/sites/NSSCLDirect/SitePages/NSS-CL-Inside-Sales.aspx)
+
+***
+
+## 📥 Copy‑Ready CSV (with Descriptions)
+
+```csv
+Link Text,URL,Section/Heading,Is Navigation,Description
+"Open Here","https://onyourside.sharepoint.com/:p:/r/sites/NSSCLDirect/Inside%20Sales%20Document/Archive/Inside%20Sales%202026%20Team%20Plans.pptx?d=w87f77cc73e834af2b5bfe5e865680571&csf=1&web=1&e=aoNk4q","2026 Inside Sales Team Plan / Appetite Updates 3/2026","In-content","PowerPoint deck: Inside Sales 2026 Team Plans referenced under “Appetite Updates 3/2026.”"
+"Open Here","https://onyourside.sharepoint.com/:b:/s/AppetiteSprints/IQCMhKzOqdXwTYTc5XYBye-oAfJM6HM3H1sEtMtmYxGVrqc?e=bFZ3O4","2026 Inside Sales Team Plan / Appetite Updates 3/2026","In-content","File in AppetiteSprints library tied to the “Appetite Updates 3/2026” call-out (likely the sprint/update artifact)."
+"SharePoint Link","https://onyourside.sharepoint.com/sites/SmallCommercialIdentityandAppetite","Ongoing 2026 Initiatives → Small Commercial Identity (Appetite) Updates","In-content","SharePoint site used to monitor appetite changes/expansions and share updates with agents; called out as an ongoing review item."
+"AskCLNewBusiness@nationwide.com","mailto:AskCLNewBusiness@nationwide.com","Notepad → Underwriting Contacts","In-content","Small Market Underwriting – New Business mailbox; listed alongside hours (8am–8pm ET) and phone contact."
+"AskCLExistingBusiness@nationwide.com","mailto:AskCLExistingBusiness@nationwide.com","Notepad → Underwriting Contacts","In-content","Small Market Underwriting – Existing Business mailbox; companion to the New Business contact."
+```
+Here are your **top 50 sites grouped by content category** (sorted by total visits within each category). I normalized domains, rolled up duplicates, and then tagged each site to a category that fits your Nationwide workflows.
+
+> **Downloads**
+>
+> *   Top 50 sites with categories: [top50\_sites\_with\_categories.csv](blob:https://www.microsoft365.com/f3623a33-bdcb-47dd-af64-141d808a3b11)
+> *   Category totals (pivot): [top50\_category\_totals.csv](blob:https://www.microsoft365.com/db84d28f-aa58-4026-b2d5-25c4790ca0de)
+
+***
+
+## Category roll‑up (totals → sites)
+
+**Nationwide – SharePoint & Sites — 3,209**
+
+*   onyourside.sharepoint.com — 3,001
+*   onyourside-my.sharepoint.com — 208
+
+**Salesforce (CLNSS) — 785**
+
+*   clnss.lightning.force.com — 740
+*   clnss.my.salesforce.com — 45
+
+**Code Hosting (GitHub) — 636**
+
+*   github.com — 622
+*   gist.github.com — 14
+
+**Search Engines — 499**
+
+*   [www.bing.com](http://www.bing.com) — 319
+*   [www.google.com](http://www.google.com) — 180
+
+**Power Platform & Analytics — 424**
+
+*   make.powerapps.com — 274
+*   make.powerautomate.com — 86
+*   admin.powerplatform.microsoft.com — 25
+*   app.powerbi.com — 24
+*   make.powerpages.microsoft.com — 15
+
+**Microsoft Identity & Account — 302**
+
+*   login.microsoftonline.com — 112
+*   myaccount.microsoft.com — 98
+*   myapps.microsoft.com — 43
+*   myworkaccount.microsoft.com — 17
+*   mysignins.microsoft.com — 16
+*   myaccess.microsoft.com — 16
+
+**Other — 293**
+
+*   org9db1d32f.crm.dynamics.com — 158
+*   [www.myworkday.com](http://www.myworkday.com) — 117
+*   statics.teams.cdn.office.net — 18
+
+**Contact Center (Genesys Cloud) — 289**
+
+*   apps.mypurecloud.com — 277
+*   login.mypurecloud.com — 12
+
+**Insurance Tools (Appetite/NAICS) — 285**
+
+*   app.askkodiak.com — 266
+*   naics.askkodiak.com — 19
+
+**Microsoft 365 Apps — 267**
+
+*   m365.cloud.microsoft — 152
+*   whiteboard.cloud.microsoft — 49
+*   teams.microsoft.com — 38
+*   portal.office.com — 14
+*   planner.cloud.microsoft — 14
+
+**Engagement/Training (Kahoot) — 135**
+
+*   kahoot.it — 135
+
+**Nationwide – Intranet & Knowledge — 113**
+
+*   inside.nationwide.com — 66
+*   nwpcknowledge.nationwide.com — 47
+
+**Nationwide – Core Apps — 105**
+
+*   appstore.nwie.net — 74
+*   commservicing.nwie.net — 31
+
+**Microsoft – Docs/Support — 77**
+
+*   learn.microsoft.com — 55
+*   support.microsoft.com — 22
+
+**Content/Design (Adobe Express) — 68**
+
+*   new\.express.adobe.com — 68
+
+**Insurance Tools (ISO/Verisk) — 48**
+
+*   prometrixweb.iso.com — 27
+*   gateway-login.verisk.com — 21
+
+**Nationwide – Core Apps (PolicyCenter) — 36**
+
+*   clpolicycenter.apps.nwie.net — 36
+
+**Microsoft – Browser/Support — 34**
+
+*   microsoftedge.microsoft.com — 34
+
+**Social & Communities — 31**
+
+*   [www.facebook.com](http://www.facebook.com) — 31
+
+**Microsoft – Adoption/Guidance — 18**
+
+*   adoption.microsoft.com — 18
+
+**Microsoft – Marketing/Info — 16**
+
+*   [www.microsoft.com](http://www.microsoft.com) — 16
+
+**Microsoft – Marketplace — 15**
+
+*   marketplace.microsoft.com — 15
+
+**Nationwide – Identity/SSO — 13**
+
+*   identity.nationwide.com — 13
+
+**IT Service Management (ServiceNow) — 12**
+
+*   nwproduction.service-now\.com — 12
+
+**Government / State Business Search — 11**
+
+*   tncab.tnsos.gov — 11
+
+***
+
+### Notes & assumptions
+
+*   **Deduping:** I counted each domain once and aggregated all visits to that domain (e.g., any page on `onyourside.sharepoint.com` rolls into “Nationwide – SharePoint & Sites”).
+*   **Normalization:** Query strings and fragments were removed before counting to avoid tracking parameters inflating totals.
+*   **Categorization:** Mapped manually by domain to the most relevant business category. If you want a different taxonomy (e.g., split “Microsoft 365 Apps” into “Teams / Whiteboard / Office Portal”), I can re‑tag and regenerate in seconds.
+
+***
+
+### Want it tailored?
+
+*   **By date** (e.g., last 7/30 days), **work hours only**, or **Nationwide systems vs. external**?
+*   Export as a **Power BI‑ready CSV** with category, domain, and week/day buckets?
+
+Tell me the slice you want, and I’ll produce it in your preferred checklist/bullet format.
+
+
+
+Here are the same **deduped, normalized hyperlinks** with a new **Description** column, based on the surrounding text in your uploaded page (**NSS-CL-Inside-Sales.aspx**). [\[NSS-CL-Inside-Sales | SharePoint\]](https://onyourside.sharepoint.com/sites/NSSCLDirect/SitePages/NSS-CL-Inside-Sales.aspx)
+
+***
+
+## ✅ Hyperlink Table with Descriptions
+
+| **Link Text**                          | **URL (Absolute)**                                                                                                                                                                               | **Section / Heading (Detected)**                                        | **Is Navigation?** | **Description**                                                                                                                                                                                                                                                             |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------- | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Open Here                              | `https://onyourside.sharepoint.com/:p:/r/sites/NSSCLDirect/Inside%20Sales%20Document/Archive/Inside%20Sales%202026%20Team%20Plans.pptx?d=w87f77cc73e834af2b5bfe5e865680571&csf=1&web=1&e=aoNk4q` | 2026 Inside Sales Team Plan / Appetite Updates 3/2026                   | In‑content         | PowerPoint deck: **Inside Sales 2026 Team Plans** referenced under “Appetite Updates 3/2026.” [\[NSS-CL-Inside-Sales | SharePoint\]](https://onyourside.sharepoint.com/sites/NSSCLDirect/SitePages/NSS-CL-Inside-Sales.aspx)                                        |
+| Open Here                              | `https://onyourside.sharepoint.com/:b:/s/AppetiteSprints/IQCMhKzOqdXwTYTc5XYBye-oAfJM6HM3H1sEtMtmYxGVrqc?e=bFZ3O4`                                                                               | 2026 Inside Sales Team Plan / Appetite Updates 3/2026                   | In‑content         | File in **AppetiteSprints** library tied to the “Appetite Updates 3/2026” call‑out (likely the sprint/update artifact). [\[NSS-CL-Inside-Sales | SharePoint\]](https://onyourside.sharepoint.com/sites/NSSCLDirect/SitePages/NSS-CL-Inside-Sales.aspx)              |
+| SharePoint Link                        | `https://onyourside.sharepoint.com/sites/SmallCommercialIdentityandAppetite`                                                                                                                     | Ongoing 2026 Initiatives → Small Commercial Identity (Appetite) Updates | In‑content         | SharePoint site used to **monitor appetite changes/expansions** and share updates with agents; called out as an ongoing review item. [\[NSS-CL-Inside-Sales | SharePoint\]](https://onyourside.sharepoint.com/sites/NSSCLDirect/SitePages/NSS-CL-Inside-Sales.aspx) |
+| <AskCLNewBusiness@nationwide.com>      | `mailto:AskCLNewBusiness@nationwide.com`                                                                                                                                                         | Notepad → Underwriting Contacts                                         | In‑content         | **Small Market Underwriting – New Business** mailbox; listed alongside hours (8am–8pm ET) and phone contact. [\[NSS-CL-Inside-Sales | SharePoint\]](https://onyourside.sharepoint.com/sites/NSSCLDirect/SitePages/NSS-CL-Inside-Sales.aspx)                         |
+| <AskCLExistingBusiness@nationwide.com> | `mailto:AskCLExistingBusiness@nationwide.com`                                                                                                                                                    | Notepad → Underwriting Contacts                                         | In‑content         | **Small Market Underwriting – Existing Business** mailbox; companion to the New Business contact. [\[NSS-CL-Inside-Sales | SharePoint\]](https://onyourside.sharepoint.com/sites/NSSCLDirect/SitePages/NSS-CL-Inside-Sales.aspx)                                    |
+
+> **Note:** Icon‑only/empty‑text anchors (site root and three Teams “Add to Teams” links) were intentionally excluded per your rule. If you want them included with practical labels (e.g., **Scout**, **AgentWriter**, **Dash**, **NSSCLDirect Home**), say **“include icon links”** and I’ll append them with descriptions. [\[NSS-CL-Inside-Sales | SharePoint\]](https://onyourside.sharepoint.com/sites/NSSCLDirect/SitePages/NSS-CL-Inside-Sales.aspx)
+
+***
+
+## 📥 Copy‑Ready CSV (with Descriptions)
+
+```csv
+Link Text,URL,Section/Heading,Is Navigation,Description
+"Open Here","https://onyourside.sharepoint.com/:p:/r/sites/NSSCLDirect/Inside%20Sales%20Document/Archive/Inside%20Sales%202026%20Team%20Plans.pptx?d=w87f77cc73e834af2b5bfe5e865680571&csf=1&web=1&e=aoNk4q","2026 Inside Sales Team Plan / Appetite Updates 3/2026","In-content","PowerPoint deck: Inside Sales 2026 Team Plans referenced under “Appetite Updates 3/2026.”"
+"Open Here","https://onyourside.sharepoint.com/:b:/s/AppetiteSprints/IQCMhKzOqdXwTYTc5XYBye-oAfJM6HM3H1sEtMtmYxGVrqc?e=bFZ3O4","2026 Inside Sales Team Plan / Appetite Updates 3/2026","In-content","File in AppetiteSprints library tied to the “Appetite Updates 3/2026” call-out (likely the sprint/update artifact)."
+"SharePoint Link","https://onyourside.sharepoint.com/sites/SmallCommercialIdentityandAppetite","Ongoing 2026 Initiatives → Small Commercial Identity (Appetite) Updates","In-content","SharePoint site used to monitor appetite changes/expansions and share updates with agents; called out as an ongoing review item."
+"AskCLNewBusiness@nationwide.com","mailto:AskCLNewBusiness@nationwide.com","Notepad → Underwriting Contacts","In-content","Small Market Underwriting – New Business mailbox; listed alongside hours (8am–8pm ET) and phone contact."
+"AskCLExistingBusiness@nationwide.com","mailto:AskCLExistingBusiness@nationwide.com","Notepad → Underwriting Contacts","In-content","Small Market Underwriting – Existing Business mailbox; companion to the New Business contact."
+```
+
+
+AA	URL	Section/Purpose
+NSSCLDirect – Inside Sales Site Home	https://onyourside.sharepoint.com/sites/NSSCLDirect	AI Agents block (icon link)
+Scout – UW Coach (Teams app)	https://teams.microsoft.com/l/app/f6405520-7907-4464-8f6e-9889e2fb7d8f?templateInstanceId=00a01ab3-4aa3-4d71-aa75-b25d881c5889&environment=Default-22140e4c-d390-45c2-b297-a26c516dc461	UW assistance incl. classification/questions
+AgentWriter – Draft Email Help (Teams app)	https://teams.microsoft.com/l/app/f6405520-7907-4464-8f6e-9889e2fb7d8f?templateInstanceId=2c02fb02-638f-4794-b04d-da8dea6be7e0&environment=Default-22140e4c-d390-45c2-b297-a26c516dc461	Formatting email questions & drafting
+Dash – CL Sidekick V3.0 (Teams app)	https://teams.microsoft.com/l/app/f6405520-7907-4464-8f6e-9889e2fb7d8f?templateInstanceId=a4d062d3-c9ab-4ea1-9f61-da5a7d7ded1d&environment=Default-22140e4c-d390-45c2-b297-a26c516dc461	All other requests not handled by above bots
+
+
+
+
+
+
+
+
+
+Want me to **export this as an Excel file** or **create a SharePoint list** (with columns pre‑defined) so your team can manage these links centrally?
+
+
+
+
+
+
+
